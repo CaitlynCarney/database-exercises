@@ -24,7 +24,7 @@ use employees;
     first_name = 'Vidya' or
     first_name = 'Maya'
     and gender = 'M';
-        #619 rows
+        #441 rows
 
 ## Find all current or previous employees whose last name starts with 'E'. Enter a comment with the number of employees whose last name starts with E.
     select *
@@ -57,12 +57,19 @@ last names end with E, regardless of whether they start with E?
     and last_name like '%e';
         899 rows
 
+    # you cand also format like
+        select *
+        from employees
+        where last_name
+        like 'e%e';
+
 ## Find all current or previous employees hired in the 90s. Enter a comment with the number of employees 
 returned.
     select *
     from employees
     where hire_date
     like '199%-%-%';
+    
 
 ## Find all current or previous employees born on Christmas. Enter a comment with the number of employees returned.
     select *
