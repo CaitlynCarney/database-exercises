@@ -64,4 +64,4 @@ have there ever been? Answer that in a comment in your SQL file.
     from employees
     group by user_name
     order by count(*) desc;
-        #13,251 repeat username
+        #13,251 repeat username.
