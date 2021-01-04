@@ -63,4 +63,4 @@ have there ever been? Answer that in a comment in your SQL file.
     substr(birth_date, 3, 2))) as user_name, count(*)
     from employees
     group by user_name;
-        #yes there are some repeat username
+        #285,872repeat username
