@@ -62,5 +62,6 @@ have there ever been? Answer that in a comment in your SQL file.
     select LOWER(concat(substr(first_name,1, 1), substr(last_name, 1, 4), "_", substr(birth_date, 6, 2), 
     substr(birth_date, 3, 2))) as user_name, count(*)
     from employees
-    group by user_name;
-        #285,872repeat username
+    group by user_name
+    order by count(*) desc;
+        #13,251 repeat username
