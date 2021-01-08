@@ -28,3 +28,13 @@ from depts_avg_sal
 join manager_salary using (dept_no));
 select *
 from manager_vs_dept;
+
+
+## wolrd db
+
+# What languages are spoken in Santa Monica?
+select Name, Language
+from city
+join countrylanguage using (CountryCode)
+where Name = 'Santa Monica'
+order by Language asc;
